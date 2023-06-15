@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    //依赖的Api库
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  }
+}
