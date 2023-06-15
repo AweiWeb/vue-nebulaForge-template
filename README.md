@@ -5,10 +5,14 @@
 
 ### vue-router + vuex
 
+
 clone 后
 
 npm i  => 安装依赖就可以用了
 
 npm start => 运行程序
+
+<img width="505" alt="image" src="https://github.com/AweiWeb/vue-nebulaForge-template/assets/110518509/a5b57cd9-9180-4840-991f-b504e8e1c215">
+
 
 npm run build => 打包文件
