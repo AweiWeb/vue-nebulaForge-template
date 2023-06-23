@@ -1,6 +1,66 @@
+@import './siderBar.less';
 body {
-  background-color: aqua;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    height: 100%;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 #app {
-  font-size: 15px;
+    height: 100%;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+ul,
+h1,
+h3,
+h4,
+p,
+dl,
+dd {
+    padding: 0;
+    margin: 0;
+}
+
+.app-container {
+    padding: 10px;
+}
+
+.main {
+    min-height: calc(100vh - 50px);
+    margin-left: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.main2 {
+    min-height: calc(100vh - 50px);
+    margin-left: 100px;
+    position: relative;
+    overflow: hidden;
+    transition: margin-left 0.28s;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+input:focus {
+    outline: none; /* 去除默认的聚焦时外边框 */
+    box-shadow: 0 0 5px #aaa; /* 聚焦时添加阴影效果 */
 }

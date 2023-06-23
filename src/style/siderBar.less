@@ -1,0 +1,130 @@
+.SiderBar-box {
+    position: fixed;
+    background: #f8f8ff;
+    min-height: 100%;
+    width: 200px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+
+    .siderBar {
+        padding: 5px;
+
+        .close {
+            position: absolute;
+            top: 0px;
+            left: 140px;
+            height: 40px;
+            width: 40px;
+            cursor: default;
+            border-radius: 50%;
+            background: #34d399;
+
+            span {
+                line-height: 40px;
+            }
+        }
+
+        .ul {
+            padding: 15px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li:first-child {
+                margin-top: 20px;
+            }
+
+            li {
+                line-height: 30px;
+                height: 30px;
+                margin-bottom: 20px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #778899;
+
+                    .img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                }
+
+                a:hover {
+                    color: #34d399;
+                }
+            }
+        }
+    }
+}
+
+// 隐藏的样式
+.hideBar {
+    position: fixed;
+    background: #f8f8ff;
+    min-height: 100%;
+    width: 100px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    transition: all 0.3;
+    .siderBar {
+        padding: 5px;
+
+        .close {
+            position: absolute;
+            top: 0px;
+            left: 60px;
+            height: 40px;
+            width: 40px;
+            cursor: default;
+            border-radius: 50%;
+            background: #34d399;
+
+            span {
+                line-height: 40px;
+            }
+        }
+
+        .ul {
+            padding: 15px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li:first-child {
+                margin-top: 20px;
+            }
+
+            li {
+                line-height: 30px;
+                height: 30px;
+                margin-bottom: 20px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #778899;
+
+                    .img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                }
+
+                a:hover {
+                    color: #34d399;
+                }
+            }
+        }
+    }
+}
