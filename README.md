@@ -31,3 +31,7 @@ npm start => 运行程序
 
 
 npm run build => 打包文件
+
+## 模版图示
+<img width="1511" alt="image" src="https://github.com/AweiWeb/vue-nebulaForge-template/assets/110518509/591e859d-5d42-4e21-8348-9c2302511ac1">
+
