@@ -3,6 +3,9 @@ const {Development, Production} = require('../env');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
+const AutoImport = require('unplugin-auto-import/webpack');
+const Components = require('unplugin-vue-components/webpack');
+const {ElementPlusResolver} = require('unplugin-vue-components/resolvers');
 const {VueLoaderPlugin} = require('vue-loader');
 const webpack = require('webpack');
 const {imageInlineSizeLimit, imageBase64Path, shouldBase64FromFileEnd} = require('../conf');
@@ -164,6 +167,12 @@ const config = {
         new webpack.DefinePlugin({
             __VUE_OPTIONS_API__: true,
             __VUE_PROD_DEVTOOLS__: false
+        }),
+        AutoImport({
+            resolvers: [ElementPlusResolver()]
+        }),
+        Components({
+            resolvers: [ElementPlusResolver()]
         })
     ]
 };

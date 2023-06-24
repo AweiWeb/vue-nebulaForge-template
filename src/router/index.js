@@ -3,13 +3,13 @@ import {createRouter, createWebHistory} from 'vue-router';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-      {
+        {
             path: '/login',
             component: () => import('../view/Login/index.vue'),
             meta: {title: '登录页面'}
         },
-      {   
-          // 组件的父级路由，其他组件全挂载在上面
+        {
+            // 组件的父级路由，其他组件全挂载在上面
             path: '/',
             component: () => import('../view/Layout/index.vue'),
             redirect: '/home',

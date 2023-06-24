@@ -23,7 +23,7 @@
     position: relative;
     height: 50px;
     overflow: hidden;
-    background-color: #F8F8FF;
+    background-color: #c6e2ff;
     border-bottom: 1px solid #fff;
 
     .NavBar-box {
