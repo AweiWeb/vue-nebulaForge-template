@@ -1,4 +1,4 @@
-<img width="1512" alt="image" src="https://github.com/AweiWeb/vue-nebulaForge-template/assets/110518509/ebca450e-9793-4d96-b069-7832ef2a991b"># vue-nebulaForge-template
+# vue-nebulaForge-template
 一个从0搭建的vue-template
 
 💣注意写vue3的时候不能使用ts，这里还没没有配置vue3 + ts的解析的插件，所以无法解析
