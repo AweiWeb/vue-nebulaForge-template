@@ -9,6 +9,7 @@ const {ElementPlusResolver} = require('unplugin-vue-components/resolvers');
 const {VueLoaderPlugin} = require('vue-loader');
 const webpack = require('webpack');
 const {imageInlineSizeLimit, imageBase64Path, shouldBase64FromFileEnd} = require('../conf');
+// const VuePreviewPlugin = require('vue-preview/dist/vue-preview.min.js');
 // 封装样式函数
 // 返回的一个数组，用在use中
 
@@ -174,6 +175,8 @@ const config = {
         Components({
             resolvers: [ElementPlusResolver()]
         })
+        // 图片预览插件
+        // new VuePreviewPlugin({})
     ]
 };
 

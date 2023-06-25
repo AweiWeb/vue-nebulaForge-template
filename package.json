@@ -66,6 +66,7 @@
     },
     "dependencies": {
         "@element-plus/icons-vue": "^2.1.0",
+        "@vueuse/core": "^10.2.0",
         "axios": "^1.4.0",
         "element-plus": "^2.3.4",
         "vue": "^3.2.47",
