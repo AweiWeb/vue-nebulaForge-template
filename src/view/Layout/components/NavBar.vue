@@ -6,11 +6,11 @@
             </div>
             <div class="Nav-title">
                 <div class="title">
-                    <h3>Programmer Management System</h3>
+                    <h3>One Piece</h3>
                 </div>
                 <!-- 头像 -->
                 <div class="personal">
-                    <img src="" alt="">
+                    <img src="@/assets/b.jpg" alt="" class="img">
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
     position: relative;
     height: 50px;
     overflow: hidden;
-    background-color: #c6e2ff;
+    background-color: #F8F8FF;
     border-bottom: 1px solid #fff;
 
     .NavBar-box {
@@ -64,6 +64,12 @@
                 height: 30px;
                 width: 30px;
                 margin-right: 80px;
+
+                .img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                }
             }
         }
     }

@@ -1,73 +1,55 @@
 <template>
     <div class="home-page">
-        <div class="item">
-            <ElCard :body-style="{ padding: '0px' }" shadow="always">
-                <template #header>
-                    <div class="card-header">
-                        <span>Card name</span>
-                    </div>
-                </template>
-                <img src="../../assets/a.jpg" class="image" />
-            </ElCard>
-        </div>
-        <div class="item">
-            <ElCard :body-style="{ padding: '0px' }" shadow="always">
-                <template #header>
-                    <div class="card-header">
-                        <span>Card name</span>
-                    </div>
-                </template>
-                <img src="../../assets/k.jpg" class="image" />
-            </ElCard>
-        </div>
-        <div class="item">
-            <ElCard :body-style="{ padding: '0px' }" shadow="always">
-                <template #header>
-                    <div class="card-header">
-                        <span>Card name</span>
-                    </div>
-                </template>
-                <img src="../../assets/c.jpg" class="image" />
-            </ElCard>
-        </div>
-        <div class="item">
-            <ElCard :body-style="{ padding: '0px' }" shadow="always">
-                <template #header>
-                    <div class="card-header">
-                        <span>Card name</span>
-                    </div>
-                </template>
-                <img src="../../assets/m.jpg" class="image" />
-            </ElCard>
-        </div>
-        <div class="item">
-            <ElCard :body-style="{ padding: '0px' }" shadow="always">
-                <template #header>
-                    <div class="card-header">
-                        <span>Card name</span>
-                    </div>
-                </template>
-                <img src="../../assets/j.jpg" class="image" />
-            </ElCard>
-        </div>
-        <div class="item">
-            <ElCard :body-style="{ padding: '0px' }" shadow="always">
-                <template #header>
-                    <div class="card-header">
-                        <span>Card name</span>
-                    </div>
-                </template>
-                <img src="../../assets/f.jpg" class="image" />
-            </ElCard>
-        </div>
+        <Card :imgSrc="assets" />
     </div>
 </template>
 <script>
-import { ElCard } from 'element-plus'
+// import { ElCard } from 'element-plus'
+import Card from '@/components/Card.vue'
+import { reactive } from 'vue';
 export default {
     name: 'Home',
     components: {
-        ElCard
+        Card
+    },
+    setup() {
+        // 模拟数据， 此数据存在内存中
+        const assets = reactive([{
+            id: 1, assets: require("@/assets/a.jpg"), name: 'LuFei'
+        }, {
+            id: 2, assets: require("@/assets/b.jpg"), name: 'LuFei'
+        }, {
+            id: 3, assets: require("@/assets/c.jpg"), name: 'LuFei'
+        }, {
+            id: 4, assets: require("@/assets/d.jpg"), name: 'LuFei'
+        }, {
+            id: 5, assets: require("@/assets/e.jpg"), name: 'LuFei'
+        }, {
+            id: 6, assets: require("@/assets/f.jpg"), name: 'LuFei'
+        }, {
+            id: 7, assets: require("@/assets/g.jpg"), name: 'LuFei'
+        }, {
+            id: 8, assets: require("@/assets/h.jpg"), name: 'LuFei'
+        }, {
+            id: 9, assets: require("@/assets/i.jpg"), name: 'LuFei'
+        }, {
+            id: 10, assets: require("@/assets/j.jpg"), name: 'LuFei'
+        }, {
+            id: 11, assets: require("@/assets/k.jpg"), name: 'LuFei'
+        }, {
+            id: 12, assets: require("@/assets/l.jpg"), name: 'LuFei'
+        }, {
+            id: 13, assets: require("@/assets/m.jpg"), name: 'LuFei'
+        }, {
+            id: 14, assets: require("@/assets/n.jpg"), name: 'LuFei'
+        }, {
+            id: 15, assets: require("@/assets/o.jpg"), name: 'LuFei'
+        }])
+        //图片预览事件
+        // const previewImg = (index) => {
+        //     VuePreview.open(assets.value, index)
+        // }
+        return { assets }
     }
 }
 </script>

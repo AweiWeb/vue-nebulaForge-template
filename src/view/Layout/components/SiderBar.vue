@@ -43,9 +43,9 @@ export default {
         const show = ref(true)
         const router = useRouter()
         const siderActive = reactive([{
-            id: 1, name: 'HomePage', router: '/home'
+            id: 1, name: 'LuFeiPage', router: '/home'
         }, {
-            id: 2, name: 'Personal Center', router: '/person'
+            id: 2, name: 'SuoLong', router: '/person'
         }, {
             id: 3, name: 'Information', router: '/intro'
         }, {
