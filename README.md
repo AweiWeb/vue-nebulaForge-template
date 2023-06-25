@@ -41,3 +41,6 @@ npm run build => 打包文件
 ## 首页图片预览功能实现
 <img width="1512" alt="image" src="https://github.com/AweiWeb/vue-nebulaForge-template/assets/110518509/d7a1c5ee-f324-4512-80f4-54db154c8db8">
 
+## 索隆轮博图的实现
+<img width="1512" alt="image" src="https://github.com/AweiWeb/vue-nebulaForge-template/assets/110518509/98af10cf-90c9-4147-8562-02ab89162869">
+
